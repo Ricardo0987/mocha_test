@@ -1,6 +1,5 @@
 var assert = require("assert");
 const pactum = require("pactum");
-const CFonts = require("cfonts");
 
 const BASE_URL = !process.env.BASE_URL && "http://rickandmortyapi.com";
 const character = !process.env.character && 521;
@@ -33,10 +32,6 @@ describe("rickandmortyapi API test", function () {
   });
 });
 
-CFonts.say("process.env|--------------", {
-  font: "tiny",
-});
+
 console.log(process.env);
-CFonts.say("--------------", {
-  font: "tiny",
-});
+
